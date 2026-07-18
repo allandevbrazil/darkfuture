@@ -12,6 +12,7 @@ node_modules/
 dist/
 .DS_Store
 .env
+plan.md
 dist
 dist-ssr
 *.local
