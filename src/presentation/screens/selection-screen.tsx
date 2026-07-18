@@ -37,7 +37,11 @@ export const SelectionScreen = ({
 
   return (
     <section className="screen selection-screen">
-      <img className="screen-bg" src="/assets/fundo.jpg" alt="Mesa de cartas" />
+      <img
+        className="screen-bg"
+        src="/assets/_fundo.jpg"
+        alt="Mesa de cartas"
+      />
       <div className="screen-shade" />
 
       <div className="panel selection-panel">
@@ -60,6 +64,15 @@ export const SelectionScreen = ({
           >
             Embaralhar deck
           </button>
+
+          <button
+            type="button"
+            className="btn selection-answer-mobile"
+            onClick={onAnswer}
+            disabled={!canAnswer}
+          >
+            Responder pergunta
+          </button>
         </div>
 
         <div className="selected-slots">
@@ -78,10 +91,7 @@ export const SelectionScreen = ({
                 <span>{POSITION_LABEL[position]}</span>
                 {card ? (
                   <>
-                    <img
-                      src="/assets/6527995c-c438-4a91-ac02-6bc74c27b187.jpg"
-                      alt="Carta selada"
-                    />
+                    <img src="/assets/verso.jpg" alt="Carta selada" />
                     <strong>Carta selada</strong>
                   </>
                 ) : (
@@ -102,15 +112,12 @@ export const SelectionScreen = ({
               disabled={pickedIds.has(card.id)}
               title={card.name}
             >
-              <img
-                src="/assets/6527995c-c438-4a91-ac02-6bc74c27b187.jpg"
-                alt="Verso da carta"
-              />
+              <img src="/assets/verso.jpg" alt="Verso da carta" />
             </button>
           ))}
         </div>
 
-        <div className="actions-row align-right">
+        <div className="actions-row align-right selection-answer-desktop">
           <button
             type="button"
             className="btn"

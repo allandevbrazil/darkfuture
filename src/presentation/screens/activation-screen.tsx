@@ -1,8 +1,5 @@
 import { useState } from "react";
 
-import castleTextureDark2 from "../../assets/castle-texture-dark-2.jpg";
-import candleImage from "../../assets/vela.png";
-
 type ActivationScreenProps = {
   isLit: boolean;
   onIgnite: () => void;
@@ -24,7 +21,7 @@ export const ActivationScreen = ({
     >
       <img
         className="activation-bg"
-        src={castleTextureDark2}
+        src="/assets/castle-texture-dark-2.jpg"
         alt="Templo escuro"
       />
       <div className="dark-overlay" />
@@ -54,7 +51,11 @@ export const ActivationScreen = ({
         disabled={isLit}
         aria-label="Acender vela"
       >
-        <img src={candleImage} alt="Vela branca" className="candle-image" />
+        <img
+          src="/assets/vela.png"
+          alt="Vela branca"
+          className="candle-image"
+        />
         <span className="flame" />
       </button>
     </section>

@@ -363,6 +363,10 @@ select option {
   font-weight: 700;
 }
 
+.selection-answer-mobile {
+  display: none;
+}
+
 .selected-slots {
   margin-top: 16px;
   display: grid;
@@ -596,6 +600,18 @@ blockquote {
   .selection-head {
     flex-direction: column;
     align-items: stretch;
+  }
+
+  .selection-answer-mobile {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 46px;
+    margin-top: 6px;
+  }
+
+  .selection-answer-desktop {
+    display: none;
   }
 
   .selected-slots {

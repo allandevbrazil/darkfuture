@@ -16,7 +16,7 @@ export const ResponseScreen = ({ reading, onRestart }: ResponseScreenProps) => {
     <section className="screen response-screen">
       <img
         className="screen-bg"
-        src="/assets/f81253fc-629c-47db-8213-d0f795209bb7.jpg"
+        src="/assets/_f81253fc-629c-47db-8213-d0f795209bb7.jpg"
         alt="Resposta espiritual"
       />
       <div className="screen-shade" />
