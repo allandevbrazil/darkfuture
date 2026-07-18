@@ -33,6 +33,7 @@ export const SelectionScreen = ({
   const pickedIds = new Set(
     Object.values(selectedCards).map((card) => card?.id),
   );
+  const selectedCount = Object.values(selectedCards).filter(Boolean).length;
 
   return (
     <section className="screen selection-screen">
@@ -46,6 +47,9 @@ export const SelectionScreen = ({
             <h2>Embaralhar e Selecionar</h2>
             <p className="screen-subtitle">
               Escolha 3 cartas para passado, presente e futuro.
+            </p>
+            <p className="selection-progress">
+              {selectedCount}/3 cartas seladas
             </p>
           </div>
 
@@ -74,8 +78,11 @@ export const SelectionScreen = ({
                 <span>{POSITION_LABEL[position]}</span>
                 {card ? (
                   <>
-                    <img src={card.image} alt={card.name} />
-                    <strong>{card.name}</strong>
+                    <img
+                      src="/assets/6527995c-c438-4a91-ac02-6bc74c27b187.jpg"
+                      alt="Carta selada"
+                    />
+                    <strong>Carta selada</strong>
                   </>
                 ) : (
                   <em>Escolha uma carta</em>

@@ -22,7 +22,6 @@ export type GameState = {
 
 export const FORM_STEPS: Array<keyof PlayerProfile> = [
   "name",
-  "age",
   "sex",
   "birthDate",
   "birthTime",

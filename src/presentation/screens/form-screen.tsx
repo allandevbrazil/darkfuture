@@ -14,8 +14,9 @@ const FIELDS: Array<{
   key: keyof PlayerProfile;
   title: string;
   subtitle: string;
-  type: "text" | "number" | "date" | "time" | "textarea";
+  type: "text" | "date" | "time" | "textarea" | "select";
   placeholder: string;
+  options?: Array<{ value: string; label: string }>;
 }> = [
   {
     key: "name",
@@ -25,18 +26,15 @@ const FIELDS: Array<{
     placeholder: "Digite seu nome",
   },
   {
-    key: "age",
-    title: "Idade",
-    subtitle: "Cada ciclo de vida altera a leitura da energia.",
-    type: "number",
-    placeholder: "Digite sua idade",
-  },
-  {
     key: "sex",
     title: "Sexo",
-    subtitle: "Use a forma como prefere ser identificado(a).",
-    type: "text",
-    placeholder: "Ex: feminino, masculino, nao-binario",
+    subtitle: "Selecione uma opcao para calibrar a leitura.",
+    type: "select",
+    placeholder: "Selecione",
+    options: [
+      { value: "masculino", label: "Masculino" },
+      { value: "feminino", label: "Feminino" },
+    ],
   },
   {
     key: "birthDate",
@@ -72,6 +70,7 @@ export const FormScreen = ({
 }: FormScreenProps) => {
   const field = FIELDS[step];
   const isLast = step === FIELDS.length - 1;
+  const progress = ((step + 1) / FIELDS.length) * 100;
 
   return (
     <section className="screen form-screen">
@@ -89,6 +88,10 @@ export const FormScreen = ({
           Passo {step + 1} de {FIELDS.length}
         </p>
 
+        <div className="form-progress" aria-hidden="true">
+          <span style={{ width: `${progress}%` }} />
+        </div>
+
         <div className="field-block">
           <label htmlFor={field.key}>{field.title}</label>
           <p>{field.subtitle}</p>
@@ -101,6 +104,19 @@ export const FormScreen = ({
               placeholder={field.placeholder}
               rows={4}
             />
+          ) : field.type === "select" ? (
+            <select
+              id={field.key}
+              value={formData[field.key]}
+              onChange={(event) => onChange(field.key, event.target.value)}
+            >
+              <option value="">{field.placeholder}</option>
+              {field.options?.map((option) => (
+                <option key={option.value} value={option.value}>
+                  {option.label}
+                </option>
+              ))}
+            </select>
           ) : (
             <input
               id={field.key}
@@ -108,8 +124,6 @@ export const FormScreen = ({
               value={formData[field.key]}
               onChange={(event) => onChange(field.key, event.target.value)}
               placeholder={field.placeholder}
-              min={field.type === "number" ? 1 : undefined}
-              max={field.type === "number" ? 120 : undefined}
             />
           )}
         </div>

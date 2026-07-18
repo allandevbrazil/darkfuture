@@ -16,7 +16,6 @@ import {
 
 const EMPTY_FORM: PlayerProfile = {
   name: "",
-  age: "",
   sex: "",
   birthDate: "",
   birthTime: "",
