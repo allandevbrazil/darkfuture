@@ -18,6 +18,7 @@ function App() {
     nextFormStep,
     previousFormStep,
     goToSelection,
+    goToQuestionStep,
     shuffleDeck,
     selectCard,
     removeSelectedCard,
@@ -99,7 +100,16 @@ function App() {
     }
 
     if (state.screen === "response" && state.reading) {
-      return <ResponseScreen reading={state.reading} onRestart={restart} />;
+      return (
+        <ResponseScreen
+          key={state.reading.cards
+            .map((entry) => `${entry.position}:${entry.card.id}`)
+            .join("|")}
+          reading={state.reading}
+          onRestart={restart}
+          onAskAnotherQuestion={goToQuestionStep}
+        />
+      );
     }
 
     return null;
@@ -108,6 +118,7 @@ function App() {
     canAnswer,
     generateAnswer,
     goToSelection,
+    goToQuestionStep,
     igniteCandle,
     nextFormStep,
     orderedCards,
@@ -135,7 +146,14 @@ function App() {
         role="toolbar"
         aria-label="Controle de musica"
       >
-        <span className="top-audio-brand">Entidades Ocultas</span>
+        <button
+          type="button"
+          className="top-audio-brand"
+          onClick={restart}
+          title="Voltar para ativacao"
+        >
+          dark future
+        </button>
 
         <button
           type="button"
@@ -149,11 +167,11 @@ function App() {
         >
           {isPaused ? (
             <svg viewBox="0 0 24 24" aria-hidden="true">
-              <path d="M7 5h3v14H7zM14 5h3v14h-3z" />
+              <path d="M7 5v14l11-7z" />
             </svg>
           ) : (
             <svg viewBox="0 0 24 24" aria-hidden="true">
-              <path d="M7 5v14l11-7z" />
+              <path d="M7 5h3v14H7zM14 5h3v14h-3z" />
             </svg>
           )}
           <span>{isPaused ? "Continuar" : "Pausar"}</span>

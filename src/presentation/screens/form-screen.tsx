@@ -59,6 +59,8 @@ const FIELDS: Array<{
   },
 ];
 
+const QUESTION_MAX_LENGTH = 100;
+
 export const FormScreen = ({
   step,
   formData,
@@ -71,6 +73,9 @@ export const FormScreen = ({
   const field = FIELDS[step];
   const isLast = step === FIELDS.length - 1;
   const progress = ((step + 1) / FIELDS.length) * 100;
+  const questionValue = formData.question ?? "";
+  const questionLength = questionValue.length;
+  const questionProgress = (questionLength / QUESTION_MAX_LENGTH) * 100;
 
   return (
     <section className="screen form-screen">
@@ -97,13 +102,31 @@ export const FormScreen = ({
           <p>{field.subtitle}</p>
 
           {field.type === "textarea" ? (
-            <textarea
-              id={field.key}
-              value={formData[field.key]}
-              onChange={(event) => onChange(field.key, event.target.value)}
-              placeholder={field.placeholder}
-              rows={4}
-            />
+            <>
+              <textarea
+                id={field.key}
+                value={formData[field.key]}
+                onChange={(event) =>
+                  onChange(
+                    field.key,
+                    event.target.value.slice(0, QUESTION_MAX_LENGTH),
+                  )
+                }
+                placeholder={field.placeholder}
+                rows={4}
+                maxLength={QUESTION_MAX_LENGTH}
+              />
+              <div className="question-meter" aria-live="polite">
+                <div className="question-meter-bar" aria-hidden="true">
+                  <span
+                    style={{ width: `${Math.min(questionProgress, 100)}%` }}
+                  />
+                </div>
+                <p className="question-meter-text">
+                  {questionLength}/{QUESTION_MAX_LENGTH} caracteres
+                </p>
+              </div>
+            </>
           ) : field.type === "select" ? (
             <select
               id={field.key}

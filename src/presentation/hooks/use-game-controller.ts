@@ -124,6 +124,15 @@ export const useGameController = () => {
     setState((previous) => ({ ...previous, screen: "selection" }));
   }, []);
 
+  const goToQuestionStep = useCallback(() => {
+    setState((previous) => ({
+      ...previous,
+      screen: "form",
+      formStep: 4,
+      selectedCards: {},
+    }));
+  }, []);
+
   const shuffleDeck = useCallback(() => {
     setState((previous) => ({
       ...previous,
@@ -259,6 +268,7 @@ export const useGameController = () => {
     nextFormStep,
     previousFormStep,
     goToSelection,
+    goToQuestionStep,
     shuffleDeck,
     selectCard,
     removeSelectedCard,

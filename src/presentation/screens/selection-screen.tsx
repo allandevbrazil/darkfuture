@@ -57,22 +57,24 @@ export const SelectionScreen = ({
             </p>
           </div>
 
-          <button
-            type="button"
-            className={`btn ${isShuffling ? "pulse" : ""}`}
-            onClick={onShuffle}
-          >
-            Embaralhar deck
-          </button>
+          <div className="selection-actions">
+            <button
+              type="button"
+              className={`btn ${isShuffling ? "pulse" : ""}`}
+              onClick={onShuffle}
+            >
+              Embaralhar deck
+            </button>
 
-          <button
-            type="button"
-            className="btn selection-answer-mobile"
-            onClick={onAnswer}
-            disabled={!canAnswer}
-          >
-            Responder pergunta
-          </button>
+            <button
+              type="button"
+              className="btn selection"
+              onClick={onAnswer}
+              disabled={!canAnswer}
+            >
+              Responder pergunta
+            </button>
+          </div>
         </div>
 
         <div className="selected-slots">
@@ -115,17 +117,6 @@ export const SelectionScreen = ({
               <img src="/assets/verso.jpg" alt="Verso da carta" />
             </button>
           ))}
-        </div>
-
-        <div className="actions-row align-right selection-answer-desktop">
-          <button
-            type="button"
-            className="btn"
-            onClick={onAnswer}
-            disabled={!canAnswer}
-          >
-            Responder pergunta
-          </button>
         </div>
       </div>
     </section>
