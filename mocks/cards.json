@@ -1,0 +1,398 @@
+[
+  {
+    "id": "cavaleiro",
+    "name": "Cavaleiro",
+    "image": "/assets/cavaleiro.jpg",
+    "keywords": ["movimento", "noticias", "inicio"],
+    "meaning": {
+      "past": "um evento rapido mudou o rumo da historia",
+      "present": "mensagens e oportunidades chegam com velocidade",
+      "future": "uma fase nova sera iniciada em breve"
+    }
+  },
+  {
+    "id": "trevo",
+    "name": "Trevo",
+    "image": "/assets/trevo.jpg",
+    "keywords": ["sorte", "chance", "imprevisivel"],
+    "meaning": {
+      "past": "uma chance inesperada abriu seu caminho",
+      "present": "a sorte ajuda, mas exige acao imediata",
+      "future": "oportunidade curta surgira e deve ser aproveitada"
+    }
+  },
+  {
+    "id": "navio",
+    "name": "Navio",
+    "image": "/assets/navio.jpg",
+    "keywords": ["viagem", "expansao", "distancia"],
+    "meaning": {
+      "past": "mudancas de ambiente influenciaram sua jornada",
+      "present": "ha desejo de explorar novos territórios",
+      "future": "expansao e deslocamentos estao por vir"
+    }
+  },
+  {
+    "id": "casa",
+    "name": "Casa",
+    "image": "/assets/casa.jpg",
+    "keywords": ["base", "familia", "seguranca"],
+    "meaning": {
+      "past": "suas raizes moldaram sua decisao atual",
+      "present": "estabilidade e organizacao sao prioridades",
+      "future": "um ciclo seguro sera consolidado"
+    }
+  },
+  {
+    "id": "arvore",
+    "name": "Arvore",
+    "image": "/assets/arvore.jpg",
+    "keywords": ["saude", "crescimento", "tempo"],
+    "meaning": {
+      "past": "um processo longo fortaleceu sua estrutura",
+      "present": "o momento pede paciencia e cuidado com energia",
+      "future": "crescimento solido ocorrera de forma gradual"
+    }
+  },
+  {
+    "id": "nuvens",
+    "name": "Nuvens",
+    "image": "/assets/nuvens.jpg",
+    "keywords": ["duvida", "confusao", "nevoa"],
+    "meaning": {
+      "past": "informacoes confusas atrasaram escolhas",
+      "present": "a leitura mostra incerteza e oscilacao emocional",
+      "future": "a neblina passa quando voce simplificar o caminho"
+    }
+  },
+  {
+    "id": "cobra",
+    "name": "Cobra",
+    "image": "/assets/cobra.jpg",
+    "keywords": ["estrategia", "seducao", "alerta"],
+    "meaning": {
+      "past": "houve jogo de interesse em volta da situacao",
+      "present": "agir com estrategia evita manipulações",
+      "future": "inteligencia tática sera decisiva"
+    }
+  },
+  {
+    "id": "caixao",
+    "name": "Caixao",
+    "image": "/assets/caixao.jpg",
+    "keywords": ["fim", "transformacao", "ruptura"],
+    "meaning": {
+      "past": "um encerramento necessario marcou sua historia",
+      "present": "algo precisa terminar para abrir novo ciclo",
+      "future": "transformacao profunda libertara energia presa"
+    }
+  },
+  {
+    "id": "buque",
+    "name": "Buque",
+    "image": "/assets/buque.jpg",
+    "keywords": ["harmonia", "presente", "alegria"],
+    "meaning": {
+      "past": "um gesto afetuoso trouxe equilibrio",
+      "present": "ha abertura para reconciliação e bem-estar",
+      "future": "uma fase mais leve e agradavel se aproxima"
+    }
+  },
+  {
+    "id": "foice",
+    "name": "Foice",
+    "image": "/assets/foice.jpg",
+    "keywords": ["corte", "decisao", "urgencia"],
+    "meaning": {
+      "past": "uma escolha abrupta evitou perda maior",
+      "present": "e hora de cortar excessos sem adiar",
+      "future": "decisao firme mudara seu destino"
+    }
+  },
+  {
+    "id": "chicote",
+    "name": "Chicote",
+    "image": "/assets/chicote.jpg",
+    "keywords": ["conflito", "intensidade", "repeticao"],
+    "meaning": {
+      "past": "discussoes repetidas desgastaram a energia",
+      "present": "o tema atual exige autocontrole e foco",
+      "future": "superar padroes repetitivos trara alivio"
+    }
+  },
+  {
+    "id": "passaros",
+    "name": "Passaros",
+    "image": "/assets/passaros.jpg",
+    "keywords": ["dialogo", "ansiedade", "movimento"],
+    "meaning": {
+      "past": "conversas importantes trouxeram pistas",
+      "present": "ruido mental aumenta se faltar clareza",
+      "future": "um acordo pode surgir com boa comunicacao"
+    }
+  },
+  {
+    "id": "crianca",
+    "name": "Crianca",
+    "image": "/assets/crianca.jpg",
+    "keywords": ["inicio", "curiosidade", "pureza"],
+    "meaning": {
+      "past": "um recomeço inocente abriu possibilidades",
+      "present": "teste caminhos com leveza e mente aberta",
+      "future": "algo novo nascerá com potencial de crescimento"
+    }
+  },
+  {
+    "id": "raposa",
+    "name": "Raposa",
+    "image": "/assets/raposa.jpg",
+    "keywords": ["astucia", "trabalho", "cautela"],
+    "meaning": {
+      "past": "sua esperteza protegeu recursos importantes",
+      "present": "olhe detalhes antes de confiar plenamente",
+      "future": "estrategia pratica rendera bons resultados"
+    }
+  },
+  {
+    "id": "urso",
+    "name": "Urso",
+    "image": "/assets/urso.jpg",
+    "keywords": ["forca", "poder", "proteção"],
+    "meaning": {
+      "past": "figuras fortes influenciaram sua rota",
+      "present": "autoconfianca e limites firmes sao necessarios",
+      "future": "poder pessoal sera consolidado"
+    }
+  },
+  {
+    "id": "estrela",
+    "name": "Estrela",
+    "image": "/assets/estrela.jpg",
+    "keywords": ["claridade", "esperanca", "guia"],
+    "meaning": {
+      "past": "um ideal inspirou sua caminhada",
+      "present": "direcao espiritual esta mais nítida agora",
+      "future": "realizacao e reconhecimento podem acontecer"
+    }
+  },
+  {
+    "id": "cegonha",
+    "name": "Cegonha",
+    "image": "/assets/cegonha.jpg",
+    "keywords": ["mudanca", "renovacao", "ciclo"],
+    "meaning": {
+      "past": "transicoes importantes remodelaram sua vida",
+      "present": "a energia pede renovacao de habitos",
+      "future": "mudancas positivas ganharao forma"
+    }
+  },
+  {
+    "id": "cachorro",
+    "name": "Cachorro",
+    "image": "/assets/cachorro.jpg",
+    "keywords": ["amizade", "lealdade", "apoio"],
+    "meaning": {
+      "past": "uma parceria fiel foi determinante",
+      "present": "apoio verdadeiro esta mais perto do que parece",
+      "future": "aliancas confiaveis fortalecem seu caminho"
+    }
+  },
+  {
+    "id": "torre",
+    "name": "Torre",
+    "image": "/assets/torre.jpg",
+    "keywords": ["isolamento", "autoridade", "visao"],
+    "meaning": {
+      "past": "periodo de recolhimento trouxe maturidade",
+      "present": "distanciamento pode ajudar na analise fria",
+      "future": "estrutura e disciplina trarao estabilidade"
+    }
+  },
+  {
+    "id": "jardim",
+    "name": "Jardim",
+    "image": "/assets/jardim.jpg",
+    "keywords": ["social", "exposicao", "rede"],
+    "meaning": {
+      "past": "ambientes sociais abriram oportunidades",
+      "present": "sua imagem publica ganha relevancia",
+      "future": "contatos certos acelerarao resultados"
+    }
+  },
+  {
+    "id": "montanha",
+    "name": "Montanha",
+    "image": "/assets/montanha.jpg",
+    "keywords": ["obstaculo", "resistencia", "persistencia"],
+    "meaning": {
+      "past": "barreiras ensinaram resiliencia",
+      "present": "o desafio atual exige constancia",
+      "future": "vencer o bloqueio trara grande evolucao"
+    }
+  },
+  {
+    "id": "encruzilhada",
+    "name": "Encruzilhada",
+    "image": "/assets/encruzilhada.jpg",
+    "keywords": ["escolha", "duvida", "direcao"],
+    "meaning": {
+      "past": "uma escolha antiga ainda ecoa",
+      "present": "duas rotas pedem decisao consciente",
+      "future": "o caminho certo aparece apos um corte claro"
+    }
+  },
+  {
+    "id": "rato",
+    "name": "Rato",
+    "image": "/assets/rato.jpg",
+    "keywords": ["perda", "desgaste", "atencao"],
+    "meaning": {
+      "past": "preocupacoes drenaram energia util",
+      "present": "ha vazamentos de tempo e foco para corrigir",
+      "future": "limpeza de excessos evita perdas maiores"
+    }
+  },
+  {
+    "id": "coracao",
+    "name": "Coracao",
+    "image": "/assets/coracao.jpg",
+    "keywords": ["amor", "paixao", "verdade"],
+    "meaning": {
+      "past": "sentimentos autenticos moveram sua jornada",
+      "present": "a resposta pede escuta do proprio coracao",
+      "future": "vinculos sinceros podem prosperar"
+    }
+  },
+  {
+    "id": "anel",
+    "name": "Anel",
+    "image": "/assets/anel.jpg",
+    "keywords": ["compromisso", "acordo", "ciclo"],
+    "meaning": {
+      "past": "um pacto antigo definiu limites",
+      "present": "o momento favorece acordos claros",
+      "future": "compromisso firme pode estabilizar o tema"
+    }
+  },
+  {
+    "id": "livro",
+    "name": "Livro",
+    "image": "/assets/livro.jpg",
+    "keywords": ["segredo", "estudo", "mistério"],
+    "meaning": {
+      "past": "informacoes ocultas influenciaram escolhas",
+      "present": "algo ainda nao revelado precisa ser estudado",
+      "future": "conhecimento reservado abrira portas"
+    }
+  },
+  {
+    "id": "carta",
+    "name": "Carta",
+    "image": "/assets/carta.jpg",
+    "keywords": ["mensagem", "documento", "clareza"],
+    "meaning": {
+      "past": "um aviso importante chegou no momento certo",
+      "present": "a verdade vira por conversa ou registro",
+      "future": "noticia objetiva definira os proximos passos"
+    }
+  },
+  {
+    "id": "cigano",
+    "name": "Cigano",
+    "image": "/assets/cigano.jpg",
+    "keywords": ["acao", "presenca", "iniciativa"],
+    "meaning": {
+      "past": "uma postura ativa mudou o resultado",
+      "present": "seu papel de agente principal esta evidente",
+      "future": "lideranca pessoal conduzira a resposta"
+    }
+  },
+  {
+    "id": "cigana",
+    "name": "Cigana",
+    "image": "/assets/cigana-o.jpg",
+    "keywords": ["intuicao", "sensibilidade", "magnetismo"],
+    "meaning": {
+      "past": "intuicao salvou voce de um erro",
+      "present": "escutar os sinais internos sera essencial",
+      "future": "sensibilidade abrira uma opcao poderosa"
+    }
+  },
+  {
+    "id": "lirios",
+    "name": "Lirios",
+    "image": "/assets/lirios.jpg",
+    "keywords": ["paz", "maturidade", "equilibrio"],
+    "meaning": {
+      "past": "calma e maturidade evitaram conflito maior",
+      "present": "o momento pede serenidade antes de agir",
+      "future": "harmonia e estabilidade emocional aumentam"
+    }
+  },
+  {
+    "id": "sol",
+    "name": "Sol",
+    "image": "/assets/sol.jpg",
+    "keywords": ["sucesso", "vitalidade", "clareza"],
+    "meaning": {
+      "past": "uma conquista iluminou seu caminho",
+      "present": "forca e visibilidade estao do seu lado",
+      "future": "resultado positivo e expansivo tende a surgir"
+    }
+  },
+  {
+    "id": "lua",
+    "name": "Lua",
+    "image": "/assets/lua.jpg",
+    "keywords": ["emocao", "intuição", "reconhecimento"],
+    "meaning": {
+      "past": "sensibilidade marcou decisoes importantes",
+      "present": "emocao alta exige equilibrio e escuta",
+      "future": "sua autenticidade sera reconhecida"
+    }
+  },
+  {
+    "id": "chave",
+    "name": "Chave",
+    "image": "/assets/chave.jpg",
+    "keywords": ["solucao", "abertura", "destino"],
+    "meaning": {
+      "past": "uma resposta certa abriu seu ciclo atual",
+      "present": "o bloqueio tem solucao ao seu alcance",
+      "future": "porta importante sera destravada"
+    }
+  },
+  {
+    "id": "peixe",
+    "name": "Peixe",
+    "image": "/assets/peixe.jpg",
+    "keywords": ["dinheiro", "fluxo", "abundancia"],
+    "meaning": {
+      "past": "movimentos financeiros moldaram sua rota",
+      "present": "fluxo material pede gestao inteligente",
+      "future": "prosperidade pode crescer com estrategia"
+    }
+  },
+  {
+    "id": "ancora",
+    "name": "Ancora",
+    "image": "/assets/ancora.jpg",
+    "keywords": ["estabilidade", "foco", "constancia"],
+    "meaning": {
+      "past": "persistencia segurou sua jornada em crise",
+      "present": "foco continuo traz seguranca",
+      "future": "base firme sustentara seus planos"
+    }
+  },
+  {
+    "id": "cruz",
+    "name": "Cruz",
+    "image": "/assets/cruz.jpg",
+    "keywords": ["prova", "fe", "destino"],
+    "meaning": {
+      "past": "uma prova espiritual fortaleceu sua fe",
+      "present": "o momento pede paciencia com responsabilidade",
+      "future": "superacao traz libertacao e sentido"
+    }
+  }
+]
