@@ -19,6 +19,7 @@ const POSITION_LABEL: Record<TarotPosition, string> = {
 };
 
 const POSITIONS: TarotPosition[] = ["past", "present", "future"];
+const ASSET_BASE = import.meta.env.BASE_URL;
 
 export const SelectionScreen = ({
   deck,
@@ -39,7 +40,7 @@ export const SelectionScreen = ({
     <section className="screen selection-screen">
       <img
         className="screen-bg"
-        src="/assets/_fundo.jpg"
+        src={`${ASSET_BASE}assets/_fundo.jpg`}
         alt="Mesa de cartas"
       />
       <div className="screen-shade" />
@@ -93,7 +94,10 @@ export const SelectionScreen = ({
                 <span>{POSITION_LABEL[position]}</span>
                 {card ? (
                   <>
-                    <img src="/assets/verso.jpg" alt="Carta selada" />
+                    <img
+                      src={`${ASSET_BASE}assets/verso.jpg`}
+                      alt="Carta selada"
+                    />
                     <strong>Carta selada</strong>
                   </>
                 ) : (
@@ -114,7 +118,7 @@ export const SelectionScreen = ({
               disabled={pickedIds.has(card.id)}
               title={card.name}
             >
-              <img src="/assets/verso.jpg" alt="Verso da carta" />
+              <img src={`${ASSET_BASE}assets/verso.jpg`} alt="Verso da carta" />
             </button>
           ))}
         </div>

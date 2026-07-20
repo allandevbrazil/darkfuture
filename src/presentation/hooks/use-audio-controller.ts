@@ -13,12 +13,14 @@ const VOLUME = {
   effect: 0.55,
 } as const;
 
+const BASE_URL = import.meta.env.BASE_URL;
+
 const PATHS = {
-  activation: "/assets/intro.mp3",
-  select: "/assets/music-select-cards.mp3",
-  response: "/assets/music-awnser.mp3",
-  candle: "/assets/sound-vela-acendendo.wav",
-  card: "/assets/sound-select-card.wav",
+  activation: `${BASE_URL}assets/intro.mp3`,
+  select: `${BASE_URL}assets/music-select-cards.mp3`,
+  response: `${BASE_URL}assets/music-awnser.mp3`,
+  candle: `${BASE_URL}assets/sound-vela-acendendo.wav`,
+  card: `${BASE_URL}assets/sound-select-card.wav`,
 } as const;
 
 export type AudioScene = "activation" | "form" | "selection" | "response";

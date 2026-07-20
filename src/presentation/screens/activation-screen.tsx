@@ -5,6 +5,8 @@ type ActivationScreenProps = {
   onIgnite: () => void;
 };
 
+const ASSET_BASE = import.meta.env.BASE_URL;
+
 export const ActivationScreen = ({
   isLit,
   onIgnite,
@@ -21,7 +23,7 @@ export const ActivationScreen = ({
     >
       <img
         className="activation-bg"
-        src="/assets/castle-texture-dark-2.jpg"
+        src={`${ASSET_BASE}assets/castle-texture-dark-2.jpg`}
         alt="Templo escuro"
       />
       <div className="dark-overlay" />
@@ -106,7 +108,7 @@ export const ActivationScreen = ({
         aria-label="Acender vela"
       >
         <img
-          src="/assets/vela.png"
+          src={`${ASSET_BASE}assets/vela.png`}
           alt="Vela branca"
           className="candle-image"
         />

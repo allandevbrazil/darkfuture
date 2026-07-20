@@ -60,6 +60,7 @@ const FIELDS: Array<{
 ];
 
 const QUESTION_MAX_LENGTH = 100;
+const ASSET_BASE = import.meta.env.BASE_URL;
 
 export const FormScreen = ({
   step,
@@ -81,7 +82,7 @@ export const FormScreen = ({
     <section className="screen form-screen">
       <img
         className="screen-bg"
-        src="/assets/fundo2.jpg"
+        src={`${ASSET_BASE}assets/fundo2.jpg`}
         alt="Fundo do ritual"
       />
       <div className="screen-shade" />

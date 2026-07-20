@@ -30,7 +30,8 @@ const TONE_LABEL: Record<ReadingResult["tone"], string> = {
 
 const REVEAL_DELAYS = [3000, 5000, 6000] as const;
 const REVEAL_FLIP_DURATION = 900;
-const REVEAL_SOUND_PATH = "/assets/sound-select-card.wav";
+const ASSET_BASE = import.meta.env.BASE_URL;
+const REVEAL_SOUND_PATH = `${ASSET_BASE}assets/sound-select-card.wav`;
 const REVEAL_SOUND_VOLUME = 0.55;
 type CardRevealState = "hidden" | "flipping" | "revealed";
 
@@ -96,7 +97,7 @@ export const ResponseScreen = ({
     <section className="screen response-screen">
       <img
         className="screen-bg"
-        src="/assets/castle-texture.jpg"
+        src={`${ASSET_BASE}assets/castle-texture.jpg`}
         alt="Resposta espiritual"
       />
       <div className="screen-shade" />
@@ -120,7 +121,7 @@ export const ResponseScreen = ({
               <div className="response-card-viewport">
                 <img
                   className="response-card-face response-card-back"
-                  src="/assets/verso.jpg"
+                  src={`${ASSET_BASE}assets/verso.jpg`}
                   alt="Verso da carta"
                 />
                 <img
