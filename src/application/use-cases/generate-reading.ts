@@ -23,7 +23,7 @@ export class GenerateReadingUseCase {
     player: PlayerProfile,
     selectedCards: PositionedCard[],
   ): Promise<ReadingResult> {
-    const templates = await this.responseRepository.getTemplates();
-    return this.interpreter.interpret(player, selectedCards, templates);
+    const matrix = await this.responseRepository.getMatrix();
+    return this.interpreter.interpret(player, selectedCards, matrix);
   }
 }

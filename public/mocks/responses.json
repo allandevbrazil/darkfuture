@@ -1,20 +1,219 @@
 {
-  "intros": [
-    "As entidades se aproximam e respondem em voz baixa.",
-    "A mesa vibra e as cartas revelam um caminho escondido.",
-    "O circulo foi aberto: ha sinais claros para sua pergunta.",
-    "A leitura foi aceita pelas entidades e a mensagem chegou."
-  ],
-  "conclusions": [
-    "A resposta aponta para movimento com responsabilidade.",
-    "O destino favorece quem age com verdade e estrategia.",
-    "Ha potencial de vitoria, desde que voce mantenha constancia.",
-    "A maré espiritual esta ativa: escolha com consciencia."
-  ],
-  "advices": [
-    "Evite prometer o que nao podera sustentar.",
-    "Anote sinais recorrentes nos proximos 7 dias.",
-    "Priorize atitudes pequenas e consistentes antes de grandes saltos.",
-    "Proteja sua energia e compartilhe planos apenas com quem soma."
-  ]
+  "themes": {
+    "amor": {
+      "openings": [
+        "A corrente afetiva da pergunta ficou muito clara para as entidades.",
+        "O campo do coracao se abriu e as cartas conversam sobre vinculo e verdade.",
+        "Existe um eco de encontro, saudade ou reconexao nesta leitura."
+      ],
+      "bridges": {
+        "past": [
+          "No passado, o afeto foi moldado por promessas, ausencias ou aprendizados emocionais.",
+          "O que ficou para tras ainda influencia a forma como voce se entrega.",
+          "A historia afetiva anterior preparou o terreno para uma nova leitura de amor."
+        ],
+        "present": [
+          "No presente, a energia pede clareza emocional e conversa sem jogo de cena.",
+          "Agora o coracao precisa de sinais objetivos, nao apenas de expectativa.",
+          "O momento exige sinceridade sobre o que voce sente e sobre o que aceita receber."
+        ],
+        "future": [
+          "No futuro, a vibracao aponta para definicao: ou amadurece, ou se encerra o ciclo.",
+          "O que vier adiante depende de escolha limpa, reciprocidade e coragem afetiva.",
+          "A tendencia futura e de aproximacao real se houver verdade dos dois lados."
+        ]
+      },
+      "conclusions": [
+        "No amor, a resposta pede reciprocidade e menos suposicoes.",
+        "Ha chance de alinhamento afetivo, desde que voce nao force o ritmo.",
+        "O vinculo pode crescer se houver clareza, presenca e gesto consistente."
+      ],
+      "advices": [
+        "Evite alimentar sinais confusos; observe atos, nao apenas palavras.",
+        "Fale sobre o que voce sente sem exigir adivinhacao do outro.",
+        "Se houver distancia, aproxime-se com verdade e sem pressa."
+      ]
+    },
+    "amizade": {
+      "openings": [
+        "A leitura gira em torno de lealdade, apoio e troca real entre pessoas.",
+        "As cartas mostram o peso das alianças e de quem caminha ao seu lado.",
+        "Ha um tema forte de convivio, confiança e circulo social nesta pergunta."
+      ],
+      "bridges": {
+        "past": [
+          "No passado, amizades ensinaram quem soma, quem ensina e quem drena energia.",
+          "O que veio antes ja mostrou que confianca e uma moeda rara.",
+          "Houve lições sociais importantes que ainda ecoam nesta leitura."
+        ],
+        "present": [
+          "No presente, e hora de observar quem realmente participa da sua vida.",
+          "A energia atual separa apoio verdadeiro de presença apenas circunstancial.",
+          "Agora a lealdade conta mais do que simpatia passageira."
+        ],
+        "future": [
+          "No futuro, a rede se organiza: algumas pessoas permanecem, outras se afastam.",
+          "A tendência e de consolidar vínculos mais honestos e funcionais.",
+          "O próximo ciclo social favorece amizades maduras e trocas mais limpas."
+        ]
+      },
+      "conclusions": [
+        "Na amizade, o que vale e constância, respeito e presença.",
+        "A resposta indica selecao natural do circulo social.",
+        "Vinculos confiaveis tendem a se fortalecer ao redor desta pergunta."
+      ],
+      "advices": [
+        "Invista tempo em quem demonstra reciprocidade sem precisar ser lembrado.",
+        "Nao misture carencia com amizade; observe consistencia de atitude.",
+        "Aproxime-se de quem oferece paz, nao de quem cria ruido."
+      ]
+    },
+    "trabalho": {
+      "openings": [
+        "As entidades falam de direcao profissional, estrategia e movimento concreto.",
+        "O campo do trabalho aparece com sinais de oportunidade e de ajuste de rota.",
+        "Ha foco em producao, resultado, posicionamento e decisao pratica."
+      ],
+      "bridges": {
+        "past": [
+          "No passado, escolhas profissionais ou financeiras deixaram marcas importantes.",
+          "A base da sua vida pratica foi moldada por experiencias de esforço e aprendizado.",
+          "O caminho profissional anterior explica a pressao ou a ambicao que existe hoje."
+        ],
+        "present": [
+          "No presente, a leitura pede foco, planejamento e leitura correta do ambiente.",
+          "O momento favorece estrategia, entrega e boa leitura de oportunidades.",
+          "Agora a melhor resposta e agir com consistencia e posicionamento."
+        ],
+        "future": [
+          "No futuro, o cenário aponta para definicao de rumo, ampliacao ou corte necessario.",
+          "A tendencia e de crescimento se houver disciplina e ajuste de prioridades.",
+          "O próximo ciclo profissional pede firmeza e inteligência de execução."
+        ]
+      },
+      "conclusions": [
+        "No trabalho, o mapa favorece atitude prática e bom timing.",
+        "A resposta indica progresso quando houver organização e foco.",
+        "O resultado tende a melhorar se voce transformar intenção em rotina."
+      ],
+      "advices": [
+        "Priorize o que gera movimento real e reduza dispersões.",
+        "Se a pergunta envolve carreira, pense em estratégia antes de impulso.",
+        "Revise energia, tempo e prioridade: o detalhe prático faz diferença."
+      ]
+    },
+    "geral": {
+      "openings": [
+        "A pergunta foi recebida como um mapa de transicao e leitura de contexto.",
+        "As cartas vao responder com foco em caminho, bloqueio e direcao disponivel.",
+        "Esta leitura geral pede observacao do todo antes de qualquer decisao."
+      ],
+      "bridges": {
+        "past": [
+          "No passado, a historia trouxe experiencias que ainda moldam a forma de agir.",
+          "O que ficou para tras explica parte da tensão atual.",
+          "A etapa anterior prepara o terreno para o que voce vive agora."
+        ],
+        "present": [
+          "No presente, as entidades mostram o que esta ativo e o que pede atencao.",
+          "O momento atual destaca energia em movimento e pontos de ajuste.",
+          "Agora e hora de enxergar com mais nitidez o centro da questao."
+        ],
+        "future": [
+          "No futuro, a tendencia aponta para desfecho, ajuste ou abertura de um novo ciclo.",
+          "O que vier adiante dependera de como voce organiza este instante.",
+          "A proxima etapa tende a clarear o caminho se a decisao for consciente."
+        ]
+      },
+      "conclusions": [
+        "A resposta mostra caminho, mas pede observacao e timing.",
+        "Existe movimento disponivel, desde que a leitura seja feita com calma.",
+        "O futuro se molda melhor quando o presente recebe atenção correta."
+      ],
+      "advices": [
+        "Escolha o passo mais simples e mais coerente com o momento.",
+        "Nao acelere a leitura: primeiro entenda o sinal, depois aja.",
+        "Mantenha o foco no que se repete, pois ali esta o recado principal."
+      ]
+    }
+  },
+  "toneSupport": {
+    "abertura": [
+      "As cartas favorecem abertura de caminho e resposta franca.",
+      "A energia mostra possibilidade real de avanço, sem forçar o fluxo.",
+      "Ha um sinal de expansão quando verdade e constancia caminham juntas."
+    ],
+    "alerta": [
+      "As entidades pedem cautela, porque o cenário ainda guarda ruído.",
+      "O aviso principal e nao decidir sob pressão ou impulso.",
+      "Antes de agir, vale reduzir expectativa e olhar os detalhes ocultos."
+    ],
+    "movimento": [
+      "O mapa indica movimento, mas ele precisa ser conduzido com inteligência.",
+      "Ha troca, ajuste e deslocamento de energia nesta leitura.",
+      "O fluxo existe; a diferença esta em como voce o organiza."
+    ],
+    "estabilidade": [
+      "A leitura pede base, rotina e sustentacao antes de saltos maiores.",
+      "O centro da resposta esta em consolidar, nao em acelerar.",
+      "Estabilidade agora e mais valiosa que pressa de resultado."
+    ]
+  },
+  "familySignals": {
+    "emotion": [
+      "O eixo afetivo desta carta chama por reciprocidade e presença real.",
+      "Aqui o sentimento pesa mais quando e vivido com verdade e limite.",
+      "A camada emocional pede escuta do coracao antes da pressa."
+    ],
+    "communication": [
+      "A conversa certa pode destravar o ponto principal desta carta.",
+      "Essa energia melhora quando ha clareza, mensagem e retorno.",
+      "O que esta nas entrelinhas precisa virar palavra objetiva."
+    ],
+    "movement": [
+      "O movimento da carta pede iniciativa e resposta em tempo util.",
+      "Ha deslocamento de energia e chance de avancar sem travar.",
+      "A leitura aponta para acao consciente e nao estagnação."
+    ],
+    "foundation": [
+      "A base desta carta pede estabilidade, rotina e estrutura.",
+      "O tema ganha forca quando ha sustentacao concreta.",
+      "Antes de ampliar, e preciso firmar o chao."
+    ],
+    "strategy": [
+      "Estratégia e leitura de cenário sao o centro desta energia.",
+      "Essa carta favorece escolha inteligente, nao impulso.",
+      "O caminho fica melhor quando voce joga com timing e método."
+    ],
+    "change": [
+      "A virada desta carta mexe com rotina e pede adaptacao.",
+      "Mudanca aqui nao e acidente; e ajuste de ciclo.",
+      "Aceitar a transicao pode acelerar o próximo passo."
+    ],
+    "caution": [
+      "Esta energia alerta para excesso, desgaste ou precipitacao.",
+      "Cautela agora e sinal de inteligência, nao de medo.",
+      "Reduzir ruído ajuda a enxergar o que realmente importa."
+    ],
+    "healing": [
+      "A carta fala de cura, ajuste interno e recomposicao de energia.",
+      "O alivio vem quando voce para de forcar o que pede cuidado.",
+      "O movimento de cura e lento, mas reconstrói base solida."
+    ],
+    "material": [
+      "O plano pratico da pergunta fica mais forte com organizacao e foco.",
+      "A energia material pede gestao de recurso e prioridade.",
+      "Resultado aparece quando a ideia vira ação concreta."
+    ],
+    "social": [
+      "O circulo social pesa nesta leitura e define parte da resposta.",
+      "Essa carta fala de convivio, rede e troca com outras pessoas.",
+      "Presenca social consistente faz diferença neste ponto."
+    ],
+    "protection": [
+      "Protecao e limite sao o recado mais forte desta energia.",
+      "Quando a fronteira e clara, a leitura fica mais limpa.",
+      "Se proteja do excesso e preserve o que e valioso."
+    ]
+  }
 }

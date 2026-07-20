@@ -11,6 +11,20 @@ const POSITION_LABEL: Record<"past" | "present" | "future", string> = {
   future: "Futuro",
 };
 
+const THEME_LABEL: Record<ReadingResult["theme"], string> = {
+  amor: "Relacionamento",
+  amizade: "Amizade",
+  trabalho: "Trabalho",
+  geral: "Leitura geral",
+};
+
+const TONE_LABEL: Record<ReadingResult["tone"], string> = {
+  abertura: "abertura",
+  alerta: "alerta",
+  movimento: "movimento",
+  estabilidade: "estabilidade",
+};
+
 export const ResponseScreen = ({ reading, onRestart }: ResponseScreenProps) => {
   return (
     <section className="screen response-screen">
@@ -25,6 +39,11 @@ export const ResponseScreen = ({ reading, onRestart }: ResponseScreenProps) => {
         <p className="screen-kicker">Resposta</p>
         <h2>A Voz das Entidades</h2>
         <h3>{reading.title}</h3>
+        <p className="reading-meta">
+          Tema: {THEME_LABEL[reading.theme]} • Energia:{" "}
+          {TONE_LABEL[reading.tone]}
+        </p>
+        <p className="reading-context">{reading.contextSummary}</p>
 
         <div className="reading-cards">
           {reading.cards.map((entry) => (

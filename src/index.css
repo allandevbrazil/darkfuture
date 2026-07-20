@@ -40,6 +40,69 @@ body {
 
 .app-shell {
   min-height: 100vh;
+  padding-top: 52px;
+}
+
+.top-audio-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 52px;
+  z-index: 20;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 0 14px;
+  background: rgba(0, 0, 0, 0.94);
+  border-bottom: 1px solid rgba(255, 214, 163, 0.18);
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.35);
+}
+
+.top-audio-brand {
+  color: var(--accent-2);
+  font-family: var(--font-title);
+  font-size: 0.86rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.top-audio-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 36px;
+  padding: 0 12px 0 10px;
+  border: 1px solid rgba(255, 214, 163, 0.18);
+  border-radius: 999px;
+  background: linear-gradient(
+    180deg,
+    rgba(26, 20, 18, 0.9),
+    rgba(8, 7, 7, 0.95)
+  );
+  color: var(--text-main);
+  font-family: var(--font-body);
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.top-audio-toggle svg {
+  width: 16px;
+  height: 16px;
+  fill: var(--accent-2);
+  flex: none;
+}
+
+.top-audio-toggle span {
+  font-size: 0.82rem;
+  letter-spacing: 0.04em;
+}
+
+.top-audio-toggle:hover {
+  border-color: rgba(255, 214, 163, 0.32);
+  box-shadow: 0 0 0 1px rgba(255, 214, 163, 0.08) inset;
 }
 
 .screen {
@@ -77,6 +140,22 @@ body {
 
 .activation-screen {
   cursor: none;
+}
+
+.activation-screen::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background:
+    radial-gradient(
+      circle at 50% 72%,
+      rgba(230, 117, 47, 0.16),
+      transparent 18%
+    ),
+    radial-gradient(circle at 50% 30%, rgba(0, 0, 0, 0.15), transparent 42%);
+  mix-blend-mode: screen;
+  opacity: 0.9;
 }
 
 .activation-content {
@@ -146,6 +225,21 @@ h3 {
   transform: translateX(-50%) scale(1.03);
 }
 
+.candle-hotspot::after {
+  content: "";
+  position: absolute;
+  inset: -16px -10px -10px;
+  border-radius: 999px;
+  background: radial-gradient(
+    circle,
+    rgba(255, 166, 74, 0.18),
+    transparent 60%
+  );
+  filter: blur(10px);
+  opacity: 0.75;
+  z-index: -1;
+}
+
 .candle-hotspot .flame {
   position: absolute;
   left: 50%;
@@ -177,54 +271,25 @@ h3 {
 
 .cursor-lighter {
   position: fixed;
-  width: 26px;
-  height: 44px;
-  margin-left: -13px;
-  margin-top: -34px;
+  width: 40px;
+  height: 60px;
+  margin-left: -12px;
+  margin-top: -48px;
   pointer-events: none;
   z-index: 5;
+  filter: drop-shadow(0 0 10px rgba(255, 150, 60, 0.38));
 }
 
-.lighter-body {
-  position: absolute;
-  left: 50%;
-  bottom: 0;
-  width: 18px;
-  height: 24px;
-  transform: translateX(-50%);
-  border-radius: 6px 6px 8px 8px;
-  background: linear-gradient(180deg, #f1f1f1 0%, #c8c8c8 62%, #949494 100%);
-  border: 1px solid rgba(255, 255, 255, 0.5);
-}
-
-.lighter-core {
-  position: absolute;
-  left: 50%;
-  top: 13px;
-  width: 10px;
-  height: 8px;
-  transform: translateX(-50%);
-  border-radius: 999px;
-  background: #565656;
+.lighter-svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+  transform-origin: 50% 70%;
+  animation: lighter-flicker 320ms ease-in-out infinite alternate;
 }
 
 .lighter-flame {
-  position: absolute;
-  left: 50%;
-  top: 0;
-  width: 14px;
-  height: 20px;
-  transform: translateX(-50%);
-  border-radius: 70% 70% 55% 55%;
-  background: radial-gradient(
-    circle at 50% 36%,
-    #fff9b6 0 25%,
-    #ffb863 42%,
-    #ef6f2e 76%,
-    transparent 100%
-  );
-  filter: drop-shadow(0 0 8px rgba(255, 170, 89, 0.68));
-  animation: lighter-flicker 320ms ease-in-out infinite alternate;
+  transform-origin: 50% 100%;
 }
 
 .candle-hotspot.lit .flame {
@@ -459,6 +524,18 @@ blockquote {
   color: var(--text-soft);
 }
 
+.reading-meta,
+.reading-context {
+  margin: 0;
+  color: var(--text-soft);
+  font-size: 0.92rem;
+}
+
+.reading-context {
+  margin-top: 6px;
+  color: var(--accent-2);
+}
+
 .loading-screen {
   display: grid;
   place-items: center;
@@ -487,11 +564,11 @@ blockquote {
 
 @keyframes lighter-flicker {
   from {
-    transform: translateX(-50%) scale(1) rotate(-2deg);
+    transform: rotate(-3deg) scale(0.98);
     opacity: 0.85;
   }
   to {
-    transform: translateX(-50%) scale(1.08) rotate(2deg);
+    transform: rotate(3deg) scale(1.05);
     opacity: 1;
   }
 }
@@ -524,6 +601,28 @@ blockquote {
 }
 
 @media (max-width: 980px) {
+  .app-shell {
+    padding-top: 48px;
+  }
+
+  .top-audio-bar {
+    height: 48px;
+    padding: 0 10px;
+  }
+
+  .top-audio-brand {
+    font-size: 0.72rem;
+  }
+
+  .top-audio-toggle {
+    min-height: 32px;
+    padding: 0 10px 0 8px;
+  }
+
+  .top-audio-toggle span {
+    font-size: 0.74rem;
+  }
+
   .screen {
     min-height: 100svh;
   }
