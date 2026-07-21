@@ -1,75 +1,63 @@
-# React + TypeScript + Vite
+# 🔮 Dark Future
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Um ritual interativo em forma de app para leituras simbólicas com cartas e respostas guiadas.
 
-Currently, two official plugins are available:
+## 🧱 Arquitetura utilizada
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Este projeto segue uma arquitetura em camadas inspirada em **Clean Architecture**, separando regras de negócio de interface e infraestrutura:
 
-## React Compiler
+- **domain/** 🜂
+  Contém entidades e regras centrais (`card`, `player`, `reading`) e serviços de interpretação.
+- **application/** 🜁
+  Define portas (contratos) e casos de uso (`get-deck-cards`, `generate-reading`) que orquestram a lógica sem depender de frameworks.
+- **infrastructure/** 🜃
+  Implementa repositórios concretos com dados JSON simulados.
+- **presentation/** 🜄
+  Camada de UI com React, telas do jogo e hooks de controle.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Essa organização facilita manutenção, testes e evolução de funcionalidades sem acoplamento excessivo.
 
-## Expanding the ESLint configuration
+## ✨ Funcionalidades principais
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- 🃏 **Seleção de cartas** com fluxo guiado por telas.
+- 🧠 **Geração de leitura** com base no estado atual do jogo.
+- 📜 **Respostas dinâmicas** vindas de repositórios JSON mockados.
+- 🔊 **Controle de áudio** para enriquecer a atmosfera da experiência.
+- ⚛️ **Frontend moderno** com React + TypeScript + Vite.
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## 🎮 Como jogar
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+1. Abra o app e inicie o ritual na tela de ativação.
+2. Informe os dados solicitados no formulário.
+3. Escolha as cartas disponíveis no deck.
+4. Aguarde a interpretação e leia a resposta final.
+5. Reinicie o ciclo para uma nova leitura.
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## 🛠️ Scripts disponíveis
 
-```
+- `npm run dev` → inicia em modo desenvolvimento.
+- `npm run build` → gera build de produção em `dist`.
+- `npm run preview` → pré-visualiza o build local.
+- `npm run deploy` → publica no GitHub Pages (usa `gh-pages`).
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 🌐 Deploy no GitHub Pages
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+O projeto já está preparado para Pages com base configurada em `vite.config.ts`:
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+- `base: "/darkfuture/"`
 
-```
+Para publicar manualmente:
+
+1. `npm install`
+2. `npm run deploy`
+
+## 🧪 Stack
+
+- React 19
+- TypeScript
+- Vite
+- ESLint
+
+---
+
+🜏 Que as cartas revelem o que precisa ser visto.
