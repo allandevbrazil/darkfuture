@@ -46,6 +46,10 @@ O projeto já está preparado para Pages com base configurada em `vite.config.ts
 
 - `base: "/darkfuture/"`
 
+Acesse a versão publicada em:
+
+- https://allandevbrazil.github.io/darkfuture/
+
 Para publicar manualmente:
 
 1. `npm install`
